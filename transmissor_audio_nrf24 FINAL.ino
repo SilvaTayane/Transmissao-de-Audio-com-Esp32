@@ -44,7 +44,7 @@ void setup() {
   radio.setDataRate(RF24_2MBPS);
   radio.setChannel(108);
   radio.setPayloadSize(PAYLOAD_SIZE);
-  radio.setCRCLength(RF24_CRC_8);
+  radio.setCRCLength(RF24_CRC_16);
   radio.setAutoAck(false);
   radio.setRetries(0, 0);
   radio.openWritingPipe(ADDRESS);

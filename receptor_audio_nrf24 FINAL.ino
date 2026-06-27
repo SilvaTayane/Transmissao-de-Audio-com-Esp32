@@ -1,3 +1,15 @@
+/*
+  ============================================================
+  RECEPTOR DE ÁUDIO - ESP32 + nRF24L01 + DAC (DMA) + GF1002
+  Core 3.x — payload fixo + CRC16 + clock adaptativo
+  ============================================================
+  GPIO25 --> R  (GF1002)      nRF24L01:
+  GND    --> G  (GF1002)      VCC-->3.3V  | CE-->GPIO4
+  5V     --> +POWER           GND-->GND   | CSN-->GPIO5
+  GND    --> -POWER           SCK-->GPIO18| MOSI-->GPIO23
+  ROUT   --> Alto-falante     MISO-->GPIO19
+  ============================================================
+*/
 
 #include <SPI.h>
 #include <RF24.h>
