@@ -50,7 +50,7 @@ if taxa != 8000:
 
     indices = np.arange(0, len(dados), fator)
 
-    indices = indices.astype(int)
+    indices = np.round(indices).astype(int)
 
     dados = dados[indices]
 
