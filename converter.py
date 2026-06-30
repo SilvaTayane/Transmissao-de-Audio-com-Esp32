@@ -1,7 +1,7 @@
 import wave
 import numpy as np
 
-ARQUIVO = "audios/voice.wav"
+ARQUIVO = "audios/audiotesteRuy.wav"
 
 with wave.open(ARQUIVO, 'rb') as wav:
 
